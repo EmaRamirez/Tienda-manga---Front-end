@@ -19,8 +19,10 @@ body {}
     grid-area: header;
     background-color: aqua;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    /* grid-template-columns: 1fr 2fr 1fr;  */
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "logo search redes" "logo search tipo";
 }
 
 
@@ -43,21 +45,83 @@ body {}
 
 /********************************HEADER*********************************/
 
+/*************************LOGO*********************************/
 .logo-container {
     grid-area: logo;
+    width: 30vw;
+    /* background-color: aquamarine; */
 }
 
+.logo-container img {
+    width: 10vw;
+    margin: 1vw;
+}
+
+/**************************************************************/
+
+
+/*************************SEARCH*******************************/
 .search-container {
     grid-area: search;
+    width: 40vw;
+    height: auto;
+    /* background-color: beige; */
 }
 
+#search {
+    width: 90%;
+    margin: auto;
+}
+
+#search>input {
+    width: 100%;
+    font-size: 3vh;
+}
+
+#search button {
+    height: 4vh;
+    background-color: transparent;
+    position: absolute;
+    border: 0;
+    margin-left: -3vw;
+}
+
+#search button img {
+    width: 80%;
+    margin: auto;
+}
+
+
+/**************************************************************/
+
+
+
+/*************************REDES********************************/
 .redes-container {
     grid-area: redes;
+    width: 30vw;
+    background-color: blueviolet;
 }
 
 
+
+
+/**************************************************************/
+
+
+/**************************TIPO********************************/
 .tipo-container {
+    width: 30vw;
     grid-area: tipo;
+    background-color: chartreuse;
+    display: flex;
+    flex-direction: column;
 }
 
-/**********************************************************************/
+
+/**************************************************************/
+
+
+
+
+/******************************END-HEADER*******************************/
