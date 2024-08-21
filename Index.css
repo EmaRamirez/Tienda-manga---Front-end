@@ -76,27 +76,30 @@ body {}
 /*************************SEARCH*******************************/
 .search-container {
     grid-area: search;
-    width: 40vw;
-    height: auto;
     /* background-color: beige; */
+    
 }
 
 #search {
-    width: 90%;
+    width: 100%;
     margin: auto;
+    padding: 5px;
 }
 
 #search>input {
     width: 100%;
     font-size: 2rem;
+    margin: auto;
+    border-radius: 25px;
 }
 
 #search button {
-    height: 4vh;
+    height: 2vh;
     background-color: transparent;
     position: absolute;
     border: 0;
     margin-left: -3vw;
+    cursor: pointer;
 }
 
 #search button img {
@@ -135,7 +138,6 @@ body {}
 
 /**************************TIPO********************************/
 .tipo-container {
-    width: 30vw;
     grid-area: tipo;
 
 }
@@ -192,11 +194,13 @@ body {}
 
     .search-container {
         width: 100vw;
+       
     }
 
     #search>input {
-        width: 90%;
+        width: 100%;
         font-size: 1rem;
+        
     }
 
     /* #search {
@@ -237,7 +241,7 @@ body {}
         
     }
     .tipo-container>ul>li {
-        width: 50vw; 
+        width: 35vw; 
         text-align: center;
         margin-top: 10px;
     }
